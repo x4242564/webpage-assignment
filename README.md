@@ -1,4 +1,4 @@
-## Webpage Assignment 1
+## Webpage Assignment
 
 Create a website that has three pages. Each of the pages should have a header, an image and three paragraphs of text in the page.  Each of the pages should link to one another using relative links. You can separate your links using a \<br\> tag.
 
@@ -32,3 +32,23 @@ The webpage includes 3 pages:
     - Game development section
         - Quick introduction to recent indie dev project: Zombie Containment
         - Playable embedded Zombie Containment
+     
+# Checklist
+- [ ] Add \<p\> elements with varying styles
+- [ ] Add \<ul\> elements
+- [ ] Add \<table\> element
+- [ ] Home
+    - [ ] Header(s)
+    - [ ] 3 Paragraphs
+    - [ ] Image(s)
+    - [ ] Page navigation with relative links
+- [ ] Interests
+    - [ ] Header(s)
+    - [ ] 3 Paragraphs
+    - [ ] Image(s)
+    - [ ] Page navigation with relative links
+- [ ] Hobbies
+    - [ ] Header(s)
+    - [ ] 3 Paragraphs
+    - [ ] Image(s)
+    - [ ] Page navigation with relative links
