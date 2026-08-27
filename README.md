@@ -34,21 +34,21 @@ The webpage includes 3 pages:
         - Playable embedded Zombie Containment
      
 # Checklist
-- [ ] Add \<p\> elements with varying styles
-- [ ] Add \<ul\> elements
-- [ ] Add \<table\> element
-- [ ] Home
-    - [ ] Header(s)
-    - [ ] 3 Paragraphs
-    - [ ] Image(s)
-    - [ ] Page navigation with relative links
-- [ ] Interests
-    - [ ] Header(s)
-    - [ ] 3 Paragraphs
-    - [ ] Image(s)
-    - [ ] Page navigation with relative links
-- [ ] Hobbies
-    - [ ] Header(s)
-    - [ ] 3 Paragraphs
-    - [ ] Image(s)
-    - [ ] Page navigation with relative links
+- [x] Add \<p\> elements with varying styles
+- [x] Add \<ul\> elements
+- [x] Add \<table\> element
+- [x] Home
+    - [x] Header(s)
+    - [x] 3 Paragraphs
+    - [x] Image(s)
+    - [x] Page navigation with relative links
+- [x] Interests
+    - [x] Header(s)
+    - [x] 3 Paragraphs
+    - [x] Image(s)
+    - [x] Page navigation with relative links
+- [x] Hobbies
+    - [x] Header(s)
+    - [x] 3 Paragraphs
+    - [x] Image(s)
+    - [x] Page navigation with relative links
