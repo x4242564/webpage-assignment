@@ -24,7 +24,7 @@ The webpage includes 3 pages:
     - Recently researched topics section
         - Parallel computing
     - Recent Shows I've watched
-        - Devilman Cry Baby
+        - Dorohedoro
 3. Hobbies page
     - Art section
         - Quick introduction to my art
