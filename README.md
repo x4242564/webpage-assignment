@@ -1,4 +1,4 @@
-**Webpage Assignment 1**
+## Webpage Assignment 1
 
 Create a website that has three pages. Each of the pages should have a header, an image and three paragraphs of text in the page.  Each of the pages should link to one another using relative links. You can separate your links using a \<br\> tag.
 
@@ -7,4 +7,28 @@ One page should also feature a bulleted list, and a table.
 
 Please include comments that explain the purpose of each section of code in your page to get credit.
 
-Submit the link to your webpage in this [#dropbox](https://gastate.view.usg.edu/d2l/lms/dropbox/user/folder_submit_files.d2l?ou=3693769&db=4905102). 
+Submit the link to your webpage in this [dropbox](https://gastate.view.usg.edu/d2l/lms/dropbox/user/folder_submit_files.d2l?ou=3693769&db=4905102).
+
+## About my webpage
+
+This project only uses pure HTML as an introduction to my Web Programming class at GSU. My code is commented to properly lable sections and explain anything more complex than regular text elements (\<p\>, \<h1\>, etc). I decided to make this a repo on GitHub just to exercise my skills with Git as this is a pretty simple and straight forward project.
+
+The webpage includes 3 pages:
+1. Home page
+    - Quick introduction to the assignment and what it showcases
+    - About me section with contact information
+2. Interests page
+    - Quick introduction to my recent interests
+    - Recently played game section
+        - Helldivers 2
+    - Recently researched topics section
+        - Parallel computing
+    - Recent Shows I've watched
+        - Devilman Cry Baby
+3. Hobbies page
+    - Art section
+        - Quick introduction to my art
+        - Recent drawings
+    - Game development section
+        - Quick introduction to recent indie dev project: Zombie Containment
+        - Playable embedded Zombie Containment
