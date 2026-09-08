@@ -1,0 +1,34 @@
+html {
+    font-size: 18px;
+}
+
+h1 {
+    color: brown;
+    text-decoration: underline;
+    text-decoration-color: rgb(66, 17, 17);
+}
+
+h2 {
+    color:brown;
+    font-style: italic;
+}
+
+h3 {
+    color:sandybrown;
+}
+
+p {
+    color:navy;
+}
+
+.description {
+    color: maroon;
+}
+
+em {
+    color: rgb(0, 68, 255);
+}
+
+strong {
+    color:blueviolet;
+}
