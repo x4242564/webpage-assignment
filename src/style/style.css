@@ -1,5 +1,6 @@
 html {
     font-size: 18px;
+    font-family: Georgia;
 }
 
 h1 {
@@ -21,14 +22,23 @@ p {
     color:navy;
 }
 
-.description {
-    color: maroon;
-}
-
 em {
     color: rgb(0, 68, 255);
 }
 
 strong {
     color:blueviolet;
+}
+
+a:link {
+    color: rgb(0, 68, 255);
+    font-style: italic;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.description {
+    color: maroon;
 }
