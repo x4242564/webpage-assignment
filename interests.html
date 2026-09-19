@@ -14,7 +14,17 @@
     </head>
     <body>
         <!-- Introduction section -->
-        <section id="intro">
+        <header>
+            <!-- Navigation section -->
+            <div>
+                <nav>
+                    <ul class="list-reset nav-list">
+                        <li><a href="index.html" target="_self">Home</a>|</li>
+                        <li><a href="hobbies.html" target="_self">Hobbies</a>|</li>
+                        <li><a href="about.html" target="_self">About</a></li>
+                    </ul>
+                </nav>
+            </div>
             <h1>My Interests</h1>
             <p>
                 I have a wide range of interests, but I particularly enjoy
@@ -22,25 +32,17 @@
                 <em>researching</em> about computer technologies. Here I will showcase
                 some things I've been into lately.
             </p>
-        </section>
-        <!-- Navigation section -->
-        <section id="nav">
-            <h3>Navigation</h3>
-            <nav>
-                <ul>
-                    <li><a href="index.html" target="_self">Home</a></li>
-                    <li><a href="hobbies.html" target="_self">Hobbies</a></li>
-                    <li><a href="about.html" target="_self">About</a></li>
-                </ul>
-            </nav>
-        </section>
+        </header>
         <!-- Interests section -->
         <section id="interests">
             <h2>Recent Interests</h2>
-            <ul>
-                <li>
-                    <h3>Helldivers 2</h3>
-                    <img src="images/helldivers2.jpg" alt="Helldivers 2" width="400" height="300">
+            
+            <div class="interest-grid">
+                <div class="grid-header"><h3>Helldivers 2</h3></div>
+                <div class="grid-item-1">
+                    <img src="images/helldivers2.jpg" alt="Helldivers 2">
+                </div>
+                <div class="grid-item-2">
                     <p class="description">
                         I've been enjoying playing Helldivers 2, and I'm particularly
                         interested in the game's unique cooperative gameplay
@@ -48,10 +50,15 @@
                         game's lore and backstory, especially the events of the
                         first game and how they connect to the sequel.
                     </p>
-                </li>
-                <li>
-                    <h3>Parallel Computing</h3>
-                    <img src="images/parallel_computing.jpg" alt="Parallel Computing" width="400" height="300">
+                </div>
+            </div>
+            
+            <div class="interest-grid">
+                <div class="grid-header"><h3>Parallel Computing</h3></div>
+                <div class="grid-item-1">
+                    <img src="images/parallel_computing.jpg" alt="Parallel Computing">
+                </div>
+                <div class="grid-item-2">
                     <p class="description">
                         I've been interested in exploring the field of parallel computing,
                         particularly how it handles i/o operations. I started researching this
@@ -61,10 +68,15 @@
                         to keep the lesson simple but a classmate told me I was talking about
                         parallel computing.
                     </p>
-                </li>
-                <li>
-                    <h3>Dorohedoro</h3>
-                    <img src="images/dorohedoro.jpg" alt="Dorohedoro (Anime)" width="400" height="300">
+                </div>
+            </div>
+            
+            <div class="interest-grid">
+                <div class="grid-header"><h3>Dorohedoro</h3></div>
+                <div class="grid-item-1">
+                    <img src="images/dorohedoro.jpg" alt="Dorohedoro (Anime)">
+                </div>
+                <div class="grid-item-2">
                     <p class="description">
                         I recently finished binge watching Dorohedoro, and I was very
                         impressed with the animation and art quality. It was very unique
@@ -74,8 +86,8 @@
                         trying to figure out what was going to happen next, and I was very satisfied
                         with the ending of season 2. Absolutely can't wait for season 3!
                     </p>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
     </body>
     <footer>
