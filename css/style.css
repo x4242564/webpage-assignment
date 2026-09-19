@@ -1,5 +1,11 @@
 /* Text Styling */
 
+/* Page margin */
+:root {
+    padding: 20px;
+}
+
+/* Base typography */
 html {
     font-size: 18px;
     font-family: Georgia;
@@ -45,18 +51,21 @@ a:hover {
     color: maroon;
 }
 
+/* Strips default list styling for the nav */
 .list-reset {
-    list-style-type: none; /* Removes the shapes */
-    padding: 0;       /* Removes default indentation */
-    margin: 0;        /* Removes default top/bottom spacing */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* Navigation Bar */
+/* Formatted with flex box */
 
 .nav-list {
     display: flex;
     justify-content: center;
 }
+
 
 .nav-list a {
     padding: 10px 20px 0px 20px;
@@ -65,6 +74,7 @@ a:hover {
 
 /* Content Boxes */
 
+/* Image + description card: 2 columns, header row on top */
 .interest-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -72,6 +82,7 @@ a:hover {
     gap: 10px;
 }
 
+/* Spans both columns so the title sits above image and text */
 .grid-header {grid-column: 1 / 3;} .grid-header h3 {margin: 0px;}
 
 .grid-item-1 img {
