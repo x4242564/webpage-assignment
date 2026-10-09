@@ -14,6 +14,8 @@
         <link rel="icon" href="images/42 icon.png"/>
     </head>
     <body>
+        <!-- Theme toggle button, handled by js/theme.js -->
+        <button id="theme_toggler" class="theme-toggle">Toggle Theme</button>
         <!-- Using section elements to organize content -->
         <!-- Introduction section -->
         <section id="intro">
@@ -48,6 +50,8 @@
                 </ul>
             </nav>
         </section>
+        <!-- Loaded last so the button exists before the script runs -->
+        <script src="js/theme.js"></script>
     </body>
     <!-- Footer section is used to mark the end of a page -->
     <footer>

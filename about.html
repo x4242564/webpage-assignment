@@ -18,6 +18,10 @@
         <!-- Introduction section -->
         <header>
             <!-- Navigation section -->
+             <div>
+                <!-- Theme toggle button, handled by js/theme.js -->
+                <button id="theme_toggler" class="theme-toggle">Toggle Theme</button>
+             </div>
             <div>
                 <nav>
                     <ul class="list-reset nav-list">
@@ -95,6 +99,8 @@
                 </tbody>
             </table>
         </section>
+        <!-- Loaded last so the button exists before the script runs -->
+        <script src="js/theme.js"></script>
     </body>
     <!-- Footer section is used to mark the end of a page -->
     <footer>

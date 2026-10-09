@@ -1,8 +1,41 @@
-/* Text Styling */
+/* Text Colors */
+
+:root {
+    --primary-color: brown;
+    --primary-underline-color: rgb(66, 17, 17);
+    --secondary-color: sandybrown;
+    --accent-color: maroon;
+    --tertiary-color: rgb(0, 68, 255);
+    --text-color: navy;
+    --bold-color: blueviolet;
+    --body-bg: white;
+    --button-bg: sandybrown;
+    --button-text: rgb(66, 17, 17);
+}
+
+/* Dark Theme */
+/* Added to <body> by js/theme.js, overrides the default colors above */
+.dark_mode {
+    --primary-color: rgb(224, 122, 95);
+    --primary-underline-color: rgb(242, 204, 143);
+    --secondary-color: rgb(244, 162, 97);
+    --accent-color: rgb(255, 138, 128);
+    --tertiary-color: rgb(130, 170, 255);
+    --text-color: rgb(214, 222, 235);
+    --bold-color: rgb(199, 146, 234);
+    --body-bg: rgb(27, 27, 47);
+    --button-bg: rgb(130, 170, 255);
+    --button-text: rgb(27, 27, 47);
+}
+
+/* Page background uses the active theme */
+body {
+    background: var(--body-bg);
+}
 
 /* Page margin */
 :root {
-    padding: 20px;
+    padding: 20px 10vw;
 }
 
 /* Base typography */
@@ -12,34 +45,34 @@ html {
 }
 
 h1 {
-    color: brown;
+    color: var(--primary-color);
     text-decoration: underline;
-    text-decoration-color: rgb(66, 17, 17);
+    text-decoration-color: var(--primary-underline-color);
 }
 
 h2 {
-    color:brown;
+    color:var(--primary-color);
     font-style: italic;
 }
 
 h3 {
-    color:sandybrown;
+    color: var(--secondary-color);
 }
 
 p {
-    color:navy;
+    color: var(--text-color);
 }
 
 em {
-    color: rgb(0, 68, 255);
+    color: var(--tertiary-color);
 }
 
 strong {
-    color:blueviolet;
+    color: var(--bold-color);
 }
 
 a:link {
-    color: rgb(0, 68, 255);
+    color: var(--tertiary-color);
     font-style: italic;
 }
 
@@ -48,7 +81,7 @@ a:hover {
 }
 
 .description {
-    color: maroon;
+    color: var(--accent-color);
 }
 
 /* Strips default list styling for the nav */
@@ -70,6 +103,23 @@ a:hover {
 .nav-list a {
     padding: 10px 20px 0px 20px;
     display: inline-block;
+}
+
+/* Theme Toggle Button */
+/* Colors come from the theme variables so it switches with the page */
+/* Block display gives it its own row, so the nav bar sits below it */
+/* Auto left margin pushes it to the right edge */
+.theme-toggle {
+    display: block;
+    margin-left: auto;
+    padding: 6px 14px;
+    font-family: Georgia;
+    font-size: 16px;
+    color: var(--button-text);
+    background: var(--button-bg);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 /* Content Boxes */
