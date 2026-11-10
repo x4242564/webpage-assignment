@@ -5,15 +5,18 @@
 let theme_toggler = document.querySelector('#theme_toggler');
 
 // Toggle the dark_mode class on click and save the choice
-theme_toggler.addEventListener('click', function () {
-    document.body.classList.toggle('dark_mode');
+// Pages without the button (login, sign up) skip this but still load the saved theme below
+if (theme_toggler) {
+    theme_toggler.addEventListener('click', function () {
+        document.body.classList.toggle('dark_mode');
 
-    if (document.body.classList.contains('dark_mode')) {
-        localStorage.setItem('website_theme', 'dark_mode');
-    } else {
-        localStorage.setItem('website_theme', 'default');
-    }
-});
+        if (document.body.classList.contains('dark_mode')) {
+            localStorage.setItem('website_theme', 'dark_mode');
+        } else {
+            localStorage.setItem('website_theme', 'default');
+        }
+    });
+}
 
 // Load the saved theme so it carries across pages and visits
 function retrieve_theme() {
