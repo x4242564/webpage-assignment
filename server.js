@@ -4,6 +4,16 @@ const express = require("express");
 const crypt = require("crypto");
 const app = express(); 
 app.use(express.urlencoded({ extended: true }));
+
+// Session storage: remembers who is logged in between page loads using a cookie
+const session = require("express-session");
+app.use(session({
+	secret: process.env.SESSION_SECRET, // set in .env
+	resave: false,
+	saveUninitialized: false, // only create a session once someone logs in
+	cookie: { httpOnly: true, sameSite: "lax" }
+}));
+
 // Serve the website pages from the public folder
 const path = require("path");
 app.use(express.static(path.join(__dirname, "public")));
@@ -71,8 +81,36 @@ app.post("/login",function(req,res)
 				res.send('<p>Your email or password is incorrect<br> <a href="login.html">Login </a> here </p> ');
 			}
 			else
-				res.send(`<p>You have logged in successfully ${result[0].fname}<br>Go back to <a href="index.html">home</a></p>`);
-		} 
+			{
+				// Start a fresh session for this user and remember their username
+				req.session.regenerate(function(err)
+				{
+					if (err)
+						return res.send("<p>Could not start your session. <a href=\"login.html\">Try again</a></p>");
+					req.session.username = result[0].user_id;
+					res.send(`<p>You have logged in successfully ${result[0].fname}<br>Go back to <a href="index.html">home</a></p>`);
+				});
+			}
+		}
+	});
+});
+
+// Tells the pages who is logged in (used by js/auth.js to fill in the nav)
+app.get("/profile", function(req, res)
+{
+	if (req.session.username)
+		res.json({ loggedIn: true, username: req.session.username });
+	else
+		res.json({ loggedIn: false, username: "Guest" });
+});
+
+// Ends the session and sends the user back to the homepage
+app.get("/logout", function(req, res)
+{
+	req.session.destroy(function()
+	{
+		res.clearCookie("connect.sid");
+		res.redirect("/index.html");
 	});
 });
 
