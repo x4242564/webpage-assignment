@@ -3,26 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
+    <title>Login</title>
+    <meta
+        name="description"
+        content="My interests and passions">
+    <meta
+        name="author"
+        content="Amari Booth">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/42 icon.png"/>
 </head>
 <body>
+	<header>
+	</header>
     <main>
-    <h1>Log in</h1>
-    <p>Fill the form below</p>
-    <form action="/login" method="post">
-        <div>
-            <label for="email">Email*:</label>
-            <input id="email" name="email" type="email" autocomplete="email" maxlength="255" required>
-        </div>
-        <div>
-            <label for="password">Password*:</label>
-            <input id="password" name="password" type="password" autocomplete="current-password" required>
-        </div>
-        <button type="submit">Log in</button>
-    </form>
-    <p>Don't have an account? <a href="register.html">Sign up here</a></p>
-    <p><a href="index.html">Back to home</a></p>
-</main>
-
+        <h1>Log in</h1>
+        <p>Fill the form below</p>
+        <form action="/login" method="post">
+            <div>
+                <label for="email">Email*:</label>
+                <input id="email" name="email" type="email" autocomplete="email" maxlength="255" required>
+            </div>
+            <div>
+                <label for="password">Password*:</label>
+                <input id="password" name="password" type="password" autocomplete="current-password" required>
+            </div>
+            <button type="submit">Log in</button>
+        </form>
+        <p>Don't have an account? <a href="register.html">Sign up here</a></p>
+        <p><a href="index.html">Back to home</a></p>
+    </main>
+    <!-- Applies the saved theme (no toggle button on this page) -->
+    <script src="js/theme.js"></script>
 </body>
+<!-- Footer section is used to mark the end of a page -->
+<footer>
+    <p>&star; Amari Booth - Web Programming Fall 2026</p>
+</footer>
 </html>

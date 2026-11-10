@@ -63,6 +63,11 @@ p {
     color: var(--text-color);
 }
 
+/* Form labels on the login/sign up pages follow the theme like paragraph text */
+label {
+    color: var(--text-color);
+}
+
 em {
     color: var(--tertiary-color);
 }
