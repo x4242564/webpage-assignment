@@ -4,14 +4,9 @@ const express = require("express");
 const crypt = require("crypto");
 const app = express(); 
 app.use(express.urlencoded({ extended: true }));
-// Keep server-side files private, then serve the website pages from this folder
-app.use(function(req, res, next)
-{
-	if (/^\/(server\.js|package(-lock)?\.json|node_modules)/i.test(req.path))
-		return res.status(404).end();
-	next();
-});
-app.use(express.static(__dirname, { dotfiles: "deny" }));
+// Serve the website pages from the public folder
+const path = require("path");
+app.use(express.static(path.join(__dirname, "public")));
 
 const mysql = require("mysql2");
 const pass = process.env.ROOTPASS; 
@@ -33,7 +28,7 @@ conn.connect(function(err)
 });
 
 //
-app.post("/signup",function(req,res)
+app.post("/register",function(req,res)
 {
 	let plainPass = req.body.password; 
 	let username = req.body.userName;
