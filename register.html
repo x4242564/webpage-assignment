@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+<body>
+	<h1>Welcome to my site</h1>
+	<p>Fill the form below</p>
+	<form action="/signup" method="POST">
+		<div>
+			<label for="fname">First Name*:</label>
+			<input type="text" name="fname" id="fname" size="40" required>
+		</div>
+		<div>
+			<label for="lname">Last Name*:</label>
+			<input type="text" name="lname" id="lname" size="40" required>
+		</div>
+		<div>
+			<label for="gpa">GPA:</label>
+			<input type="text" name="gpa" id="gpa" size="3">
+		</div>
+		<div>
+			<label for="userName">Username*:</label>
+			<input type="text" name="userName" id="userName" size="20" required>
+		</div>
+		<div>
+			<label for="email">Email*:</label>
+			<input type="email" name="email" id="email" size="40" autocomplete="email" required>
+		</div>
+		<div>
+			<label for="password">Password*:</label>
+			<input type="password" name="password" id="password" size="30" required>
+		</div>
+		<div>
+			<button type="submit">Sign up</button>
+		</div>
+	</form>
+	<p>Already have an account? <a href="login.html">Log in here</a></p>
+	<p><a href="index.html">Back to home</a></p>
+</body>
+</html>
