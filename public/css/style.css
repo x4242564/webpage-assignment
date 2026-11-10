@@ -105,6 +105,18 @@ a:hover {
     display: inline-block;
 }
 
+/* Logged-in username (filled in by js/auth.js) */
+/* Same color as paragraph text */
+#nav_username {
+    color: var(--text-color);
+}
+
+/* In the horizontal nav bar, match the links' spacing so it lines up */
+.nav-list #nav_username {
+    padding: 10px 20px 0px 20px;
+    display: inline-block;
+}
+
 /* Theme Toggle Button */
 /* Colors come from the theme variables so it switches with the page */
 /* Block display gives it its own row, so the nav bar sits below it */

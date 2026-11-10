@@ -16,6 +16,18 @@
     <body>
         <!-- Theme toggle button, handled by js/theme.js -->
         <button id="theme_toggler" class="theme-toggle">Toggle Theme</button>
+        <header>
+            <!-- Navigation section -->
+            <nav>
+                <ul class="list-reset nav-list">
+                    <li><a href="interests.html" target="_self">Interests</a>|</li>
+                    <li><a href="hobbies.html" target="_self">Hobbies</a>|</li>
+                    <li><a href="about.html" target="_self">About</a>|</li>
+                    <li><span id="nav_username">Guest</span>|</li>
+                    <li><a id="auth_link" href="login.html" target="_self">Log in</a></li>
+                </ul>
+            </nav>
+        </header>
         <!-- Using section elements to organize content -->
         <!-- Introduction section -->
         <section id="intro">
@@ -39,20 +51,9 @@
                 game</em> I've been developing. Enjoy!
             </p>
         </section>
-        <!-- Navigation section -->
-        <section id="nav">
-            <h3>Navigation</h3>
-            <nav>
-                <ul>
-                    <li><a href="login.html" target="_self">Log in</a></li>
-                    <li><a href="interests.html" target="_self">Interests</a></li>
-                    <li><a href="hobbies.html" target="_self">Hobbies</a></li>
-                    <li><a href="about.html" target="_self">About</a></li>
-                </ul>
-            </nav>
-        </section>
         <!-- Loaded last so the button exists before the script runs -->
         <script src="js/theme.js"></script>
+        <script src="js/auth.js"></script>
     </body>
     <!-- Footer section is used to mark the end of a page -->
     <footer>
